@@ -1,1 +1,65 @@
-#holaa
+body {
+    display: flex;
+    margin: 10 px;
+    background-image: url('../Public/Form.png');
+
+    background-size:cover ; /* Escala la imagen para cubrir todo el fondo */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    background-color: rgba(34, 33, 95, 1);
+}
+
+.container{
+    width: 70%; /* Ancho del contenedor */
+    margin-bottom: 5%;
+    margin-top: 3%;
+    background-color: white; /* Fondo del contenedor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    padding-bottom: 100%;   
+    overflow: hidden;
+}
+.Logo{
+    max-width: 100%; /* Ajusta el ancho máximo al del contenedor */
+    margin:3.5%;
+    display: flex; /* Para centrar el contenido */
+    justify-content: center;
+    align-items: center;
+    
+}
+.Logo img {
+    max-width: 100%; /* Ajusta el ancho máximo al del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; 
+    display: block;
+    border-radius: 10px; 
+}
+.Form{
+    max-width: 100%;
+    margin:3.5%;
+    display: flex; 
+    justify-content: left;
+    align-items: flex-start; /* Alinea horizontalmente al inicio (izquierda) */
+    flex-direction: column; 
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+h1{
+    font-family:Helvetica; 
+    color:#22215f;
+    font-weight: 100; 
+    font-size: 2em; 
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+h2{
+    font-family:Helvetica; 
+    color:#63cca9;
+    font-weight: 100; /* Negrita más intensa */
+    margin-top: 0; 
+    margin-bottom: 0; 
+    padding-top: 25px;
+}
+p{
+    font-family:Helvetica; 
+    color:#22215f; 
+}
