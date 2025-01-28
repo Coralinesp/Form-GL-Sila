@@ -16,6 +16,95 @@
             <h2><b>DATOS PERSONALES</b></h2>
             <p>Te pedimos que completes con atención toda la información de tu perfil para conocerte mejor. 
             Los datos que nos proporciones serán de gran utilidad para considerarte en nuestros procesos de selección.</p>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <label>Nombre</label><br>
+                        <input type="text"name="user_name" size="40" maxlength="10">
+                    </td>
+                    <td>
+                        <label>Apellido</label><br>
+                        <input type="text"name="user_lastname" size="40" maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Sexo</label><br>
+                        <input type="radio" name="r_gender"> Male
+                        <input type="radio" name="r_gender"> Female
+                    </td>
+                    <td>
+                        <label>Fecha de Nacimiento</label><br>
+                        <input type="date"name="birthdate" value="DD-MM-AAAA">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Teléfono</label><br>
+                        <input type="text"name="telefono" size="40" maxlength="10">
+                    </td>
+                    <td>
+                        <label>Email</label><br>
+                        <input type="text"name="email" size="40" maxlength="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Dirección</label><br>
+                        <input type="text"name="direccion" size="60" maxlength="50">
+                    </td>
+                </tr>  
+            </table>
+            <h2><b>EXPERIENCIA PROFESIONAL</b></h2>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <input type="checkbox" name="nule" checked> No tengo experiencia profesional
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Empresa</label><br>
+                        <input type="text"name="empresa" size="40" maxlength="10">
+                    </td>
+                    <td>
+                        <label>Área</label><br>
+                        <select name="Area">
+                            <option value="Dirección General">Dirección General</option>
+                            <option value="Recursos Humanos">Recursos Humanos</option>
+                            <option value="Finanzas" selected>Finanzas</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Tecnología">Tecnología</option>
+                            <option value="Atención al Cliente">Atención al Cliente</option>
+                            <option value="Logística">Logística</option>
+                            <option value="Logística">Logística</option>
+                            <option value="Operario">Operario</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Cargo</label><br>
+                        <input type="text"name="cargo" size="40" maxlength="10">
+                    </td>
+                    <td>
+                        <label>Ciudad</label><br>
+                        <input type="text"name="ciudad" size="40" maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Fecha de Inicio - Finalización</label><br>
+                        <input type="date"name="inicio" value="DD-MM-AAAA"> - 
+                        <input type="date"name="final" value="DD-MM-AAAA">
+                    </td>
+                    <td>
+                        <label>Salario</label><br>
+                        <input type="text"name="salario" size="40" maxlength="10">
+                    </td>
+                </tr>
+
+            </table>
        </div>
     </div>
 </body>
