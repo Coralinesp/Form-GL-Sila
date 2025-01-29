@@ -9,6 +9,63 @@ body {
     background-color: rgba(34, 33, 95, 1);
 }
 
+h1{
+    font-family:Helvetica; 
+    color:#22215f;
+    font-weight: 100; 
+    font-size: 2em; 
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+h2{
+    font-family:Helvetica; 
+    color:#63cca9;
+    font-weight: 100; /* Negrita más intensa */
+    margin-top: 25; 
+    margin-bottom: 0; 
+}
+
+h4{
+    color:#22215f;
+    margin-bottom: 1%;
+}
+
+p{
+    font-family:Helvetica; 
+    color:#22215f; 
+}
+form{
+    font-family:Helvetica; 
+    color:#22215f; 
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    margin-bottom: 3%;
+}
+
+textarea{
+    margin-top: 0%;    
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
 .container{
     width: 70%; /* Ancho del contenedor */
     margin-bottom: 5%;
@@ -43,27 +100,31 @@ body {
     flex-direction: column; 
     text-align: left; /* Alineación del texto a la izquierda */
 }
-h1{
-    font-family:Helvetica; 
-    color:#22215f;
-    font-weight: 100; 
-    font-size: 2em; 
-    margin-top: 0; 
-    margin-bottom: 0; 
+
+.label-idioma{
+    font-size: 17px; /* Cambia el tamaño de la letra aquí */
 }
-h2{
-    font-family:Helvetica; 
-    color:#63cca9;
-    font-weight: 100; /* Negrita más intensa */
-    margin-top: 0; 
-    margin-bottom: 0; 
-    padding-top: 25px;
+
+.tools{
+    margin-top: 1%;
+    margin-bottom: 0%;
+    font-weight: bold;
 }
-p{
-    font-family:Helvetica; 
-    color:#22215f; 
+
+.note{
+    margin-top: 5px;
+    font-weight: bold;
+    color: red;
+    font-size: 10px;
 }
-form{
-    font-family:Helvetica; 
-    color:#22215f; 
+
+.nombre{
+    height: 30px;
+}
+
+
+.tabla-experiencia {
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding-top: 3% ;
 }
