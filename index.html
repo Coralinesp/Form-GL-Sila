@@ -18,36 +18,41 @@
                 <h2><b>DATOS PERSONALES</b></h2>
                 <p>Te pedimos que completes con atención toda la información de tu perfil para conocerte mejor. 
                 Los datos que nos proporciones serán de gran utilidad para considerarte en nuestros procesos de selección.</p>
+
+                <p class="musica">Musica de ambiente <p>
+                <audio controls loop muted>
+                    <source src="../Public/Mice On Venus.mp3">
+                </audio>
                 <table width="100%">
                     <tr>
                         <td class="nombre">
                             <label>Nombre</label><br>
-                            <input type="text"name="user_name" size="40" maxlength="10">
+                            <input type="text"name="user_name" size="40" maxlength="10" required>
                         </td>
                         <td>
                             <label>Apellido</label><br>
-                            <input type="text"name="user_lastname" size="40" maxlength="10">
+                            <input type="text"name="user_lastname" size="40" maxlength="10" required
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label>Sexo</label><br>
-                            <input type="radio" name="r_gender"> Male
-                            <input type="radio" name="r_gender"> Female
+                            <input type="radio" name="r_gender" required> Male
+                            <input type="radio" name="r_gender" required> Female
                         </td>
                         <td>
                             <label>Fecha de Nacimiento</label><br>
-                            <input type="date"name="birthdate" value="DD-MM-AAAA">
+                            <input type="date"name="birthdate" value="DD-MM-AAAA" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label>Teléfono</label><br>
-                            <input type="text"name="telefono" size="40" maxlength="10">
+                            <input type="text"name="telefono" size="40" maxlength="10" required>
                         </td>
                         <td>
                             <label>Email</label><br>
-                            <input type="text"name="email" size="40" maxlength="20">
+                            <input type="text"name="email" size="40" maxlength="20" required>
                         </td>
                     </tr>
                     <tr>
@@ -58,7 +63,6 @@
                     </tr>  
                 </table>
             <h2><b>EXPERIENCIA PROFESIONAL</b></h2>
-                
                 <input type="checkbox" name="nule"> No tengo experiencia profesional <br>
                 <p>Total de experiencias añadidas: <span id="contador-experiencia">0</span></p>
                 <button type="button" onclick="agregarExperiencia()">Añadir Experiencia</button>
@@ -169,8 +173,8 @@
                         <td>
                             <label for="tools1">Herramienta 1:</label><br>
                             <select multiple name="tools1">
-                                <option value="" disabled selected>Elige una opción</option>
-                                <option value="es">Microsoft Word/option>
+                                <option value="" disabled selected>Elija una opción</option>
+                                <option value="es">Microsoft Word</option>
                                 <option value="en">Microsoft Excel</option>
                                 <option value="fr">Microsoft Word</option>
                                 <option value="de">Teams</option>
@@ -181,10 +185,29 @@
                             </textarea><!-- formattingworkaspre-->
                         </td>
                 </table>
+                <h2><b>EDUCACION</b></h2>
+                <p><b>Seleccione su nivel educativo:</b></p>
+                <table>
+                    <tr>
+                        <td>
+                            <label>Nivel educativo:</label><br>
+                                <input type="radio" name="grado" required>Sin educacion</option>
+                                <input type="radio" name="grado" required>Bachiller</option>
+                                <input type="radio" name="grado" required>Estudiante Universitario</option>
+                                <br>
+                                <input type="radio" name="grado" required>Grado Universitario</option>
+                                <input type="radio" name="grado" required>Post Grado</option>
+                        </td>
+                </table>
+                <center><button class="Submit" type="submit" onclick="alert('Formulario enviado!')">Enviar Formulario</button></center>
             </form>
+            <p>Nosotros:</p> 
+            <div class="VideoNosotros">
+                <video controls autoplay loop>
+                    <source src="./Public/video_control.mp4" type="video/mp4">
+                </video>    
+            </div>
        </div>
     </div>
-
-
 </body>
 </html>

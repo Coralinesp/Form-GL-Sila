@@ -66,6 +66,11 @@ button:hover {
     background-color: #45a049;
 }
 
+video{
+    max-width: 50%;
+    height: 50%;
+}
+
 .container{
     width: 70%; /* Ancho del contenedor */
     margin-bottom: 5%;
@@ -127,4 +132,14 @@ button:hover {
     width: 100%;
     border-bottom: 2px solid black;
     padding-top: 3% ;
+}
+
+.Submit{
+    margin-top: 10%;
+}
+
+.musica{
+    font-size: 10px;
+    font-weight: bold;
+    color: red;
 }
