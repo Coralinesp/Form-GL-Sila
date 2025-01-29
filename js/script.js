@@ -1,6 +1,24 @@
 let contador = 0; 
 
+function toggleExperiencia() {
+    let checkbox = document.getElementById("checkbox-experiencia");
+    let boton = document.querySelector("button[type='button']");  // Obtener el botón "Añadir Experiencia"
+
+    // Deshabilitar el botón y cambiar el color si el checkbox está marcado
+    if (checkbox.checked) {
+        boton.disabled = true;
+        boton.style.backgroundColor = "gray";
+    } else {
+        boton.disabled = false;
+        boton.style.backgroundColor = ""; // Restaurar el color original
+    }
+}
+
 function agregarExperiencia() {
+    // Solo permitir agregar experiencias si el checkbox no está marcado
+    if (document.getElementById("checkbox-experiencia").checked) {
+        return;
+    }
     contador++;
 
     document.getElementById("contador-experiencia").innerText = contador;
@@ -8,6 +26,7 @@ function agregarExperiencia() {
     let contenedor = document.getElementById("contenedor-experiencia");
 
     let nuevaTabla = document.createElement("div");
+    
 
     nuevaTabla.innerHTML = `
         <table class="tabla-experiencia">
@@ -18,8 +37,8 @@ function agregarExperiencia() {
                 </td>
                 <td>
                     <label for="Area">Área</label><br>
-                    <select name="Area">
-                        <option value="" disabled selected hidden>Elige el área</option>
+                    <select name="Area" class="select">
+                        <option value="" disabled selected hidden> Elige el área</option>
                         <option value="Dirección General">Dirección General</option>
                         <option value="Recursos Humanos">Recursos Humanos</option>
                         <option value="Finanzas">Finanzas</option>
