@@ -79,7 +79,7 @@ video{
     background-color: white; 
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 50%); /* Sombra */
     border-radius: 10px; /* Bordes redondeados */
-    padding-bottom: 100%;   
+    padding-bottom: 10%;   
     overflow: hidden;
 }
 .Logo{
@@ -131,9 +131,19 @@ video{
 
 .tabla-experiencia {
     width: 100%;
+    border-collapse: collapse;
     border-bottom: 1px solid rgb(193, 193, 193);
     padding-top: 3% ;
-    padding-bottom: 3% ;
+    
+}
+@media screen and (max-width: 768px) {
+    table, tr, td {
+        display: block;
+        width: 100%;
+    }
+    td {
+        padding: 10px 0;
+    }
 }
 
 .Submit{
@@ -154,4 +164,7 @@ video{
     background-color:#f7f6f6;
     color:#979595;
 }
-
+textarea {
+    text-align: left; /* Asegura que el texto comience desde la izquierda */
+    vertical-align: top; /* Asegura que el texto comience desde arriba */
+}

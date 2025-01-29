@@ -1,21 +1,31 @@
 let contador = 0; 
+//envio de form
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
 
+    form.addEventListener("submit", function (event) {
+        if (!form.reportValidity()) { 
+            event.preventDefault(); 
+        } 
+    });
+});
+//funcion para deshabilitar agregar experiencia
 function toggleExperiencia() {
     let checkbox = document.getElementById("checkbox-experiencia");
-    let boton = document.querySelector("button[type='button']");  // Obtener el botón "Añadir Experiencia"
+    let boton = document.querySelector("button[type='button']");  
 
-    // Deshabilitar el botón y cambiar el color si el checkbox está marcado
+    // deshabilitar el boton y cambiar el color si el checkbox esta marcado
     if (checkbox.checked) {
         boton.disabled = true;
         boton.style.backgroundColor = "gray";
     } else {
         boton.disabled = false;
-        boton.style.backgroundColor = ""; // Restaurar el color original
+        boton.style.backgroundColor = ""; 
     }
 }
 
 function agregarExperiencia() {
-    // Solo permitir agregar experiencias si el checkbox no está marcado
+    // Solo permitir agregar experiencias si el checkbox no esta marcado
     if (document.getElementById("checkbox-experiencia").checked) {
         return;
     }
@@ -30,6 +40,8 @@ function agregarExperiencia() {
 
     nuevaTabla.innerHTML = `
         <table class="tabla-experiencia">
+            <tr> <td colspan="2" style="height: 20px;"></td>
+                </tr>
             <tr>
                 <td>
                     <label class"LabelEmpresa">Empresa</label><br>
@@ -70,6 +82,8 @@ function agregarExperiencia() {
                     <label>Salario</label><br>
                     <input type="text" name="salario" size="40" maxlength="10">
                 </td>
+            </tr>
+            <tr> <td colspan="2" style="height: 20px;"></td>
             </tr>
         </table>
     `;
